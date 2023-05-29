@@ -85,5 +85,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
+<script>
+var passwordField = document.getElementById('password');
 
+
+var togglePasswordButton = document.getElementById('togglePassword');
+
+togglePasswordButton.addEventListener('click', function() {
+    if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+    } else {
+        passwordField.type = 'password';
+    }
+});</script>
 </html>
