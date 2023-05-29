@@ -16,7 +16,7 @@
 <body>
     <div id="app" class="bg-light">
         <!-- Top nav-bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm d-flex justify-content-between">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm d-flex justify-content-between" style="min-height:10vh;">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,8 +31,6 @@
                     </ul>
                     @if(auth()->check())
                     <div class="nav-item dropdown d-flex align-items-center">
-                    <img src="{{ asset('storage/'.Auth::user()->profile_photo) }}"
-                            alt="Profile Photo" width="50" height="50" style="object-fit: cover; border-radius: 50%;">
                         <div class="dropdown ms-2">
                             <a class="nav-link dropdown-toggle  bg-white" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,8 +54,8 @@
                 </div>
             </div>
         </nav>
-       
-       <!-- admin -->
+
+        <!-- admin -->
         @if(auth()->check() && auth()->user()->hasRole('admin'))
         @include('layouts.admin_side_bar')
 
@@ -75,16 +73,15 @@
             @yield('content')
         </main>
         @endif
-        <footer class="footer fixed-bottom mt-4 py-3 mb-0 bg-body-tertiary ">
+        <footer class="footer fixed-bottom mt-4 py-3 mb-0 bg-body-transparent">
             <div class="container-fluid d-flex justify-content-end ">
-                <span class="text-body-secondary">
-                    © 2023 [SIMS]</span>
+                <span class="text-body-secondary">© 2023 [SIMS]</span>
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 var passwordField = document.getElementById('password');
 
@@ -97,5 +94,7 @@ togglePasswordButton.addEventListener('click', function() {
     } else {
         passwordField.type = 'password';
     }
-});</script>
+});
+</script>
+
 </html>
