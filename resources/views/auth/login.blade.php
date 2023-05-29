@@ -85,5 +85,18 @@
         </div>
     </div>
 </div>
-<script src="{{asset('scripts/visibility.js')}}"></script>
+<script>
+
+var passwordField = document.getElementById('password');
+
+
+var togglePasswordButton = document.getElementById('togglePassword');
+
+togglePasswordButton.addEventListener('click', function() {
+    if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+    } else {
+        passwordField.type = 'password';
+    }
+});</script>
 @endsection
