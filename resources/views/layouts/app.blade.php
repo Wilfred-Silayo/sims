@@ -9,11 +9,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
     <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('font-awesome/css/fontawesome.css')}}">
-    <link rel="stylesheet" href="{{asset('font-awesome/css/brands.css')}}">
-    <link rel="stylesheet" href="{{asset('font-awesome/css/solid.css')}}">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -85,7 +82,7 @@
             </div>
         </footer>
 
-        <script src="{{asset('js/bootstrap.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
 
