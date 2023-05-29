@@ -85,8 +85,8 @@
         </div>
     </div>
 </div>
-<script>
 
+<script>
 var passwordField = document.getElementById('password');
 
 
@@ -99,4 +99,5 @@ togglePasswordButton.addEventListener('click', function() {
         passwordField.type = 'password';
     }
 });</script>
+
 @endsection
