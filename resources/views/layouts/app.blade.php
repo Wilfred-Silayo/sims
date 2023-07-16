@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <h4 class="text-dark fw-bold">STUDENT INFORMATION MANAGEMENT SYSTEM</h4>
+                            <h4 class="text-dark fw-bold">STUDENTS INFORMATION MANAGEMENT SYSTEM</h4>
                         </li>
                     </ul>
                     @if(auth()->check())
